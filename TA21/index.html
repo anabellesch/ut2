@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .input-container {
+            text-align: center;
+        }
+        .custom-input {
+            padding: 10px;
+            border: 2px solid #cccccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+            width: 250px;
+            font-size: 16px;
+        }
+        .custom-input:focus {
+            border-color: #0066cc;
+            box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="input-container">
+        <input 
+            type="text" 
+            class="custom-input" 
+            placeholder="Escribe algo aquí"
+        >
+    </div>
+</body>
+</html>

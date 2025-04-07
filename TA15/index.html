@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <INPut id="input"></INPut>
+    <button onclick="agregar()">Agregar</button>
+    <button onclick="eliminar()">Eliminar ultimo</button>
+    <ul id="lista"></ul>
+
+    <script>
+
+function agregar() {
+
+const input = document.getElementById('input');
+const lista = document.getElementById('lista');
+
+
+if (input.value.trim() !== '') {
+
+    const nuevoElemento = document.createElement('li');
+
+    nuevoElemento.textContent = input.value;
+
+    lista.appendChild(nuevoElemento);
+    
+   
+    input.value = '';
+}
+}
+
+            function eliminar() {
+            const lista = document.getElementById('lista');
+            const ultimoElemento = lista.lastChild;
+            lista.removeChild(ultimoElemento);
+        }
+            
+
+        
+    </script>
+</body>
+</html>
